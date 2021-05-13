@@ -1,5 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
+
 set OUTPUT_FILE=c:\temp\PingTest_%date:~-10,2%%date:~-7,2%%date:~-4,4%.txt
 >nul copy nul %OUTPUT_FILE%
 for /f "tokens=1,*" %%i in (c:\temp\serverlist.txt) do (
