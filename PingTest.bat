@@ -18,3 +18,4 @@ for /f "tokens=1,*" %%i in (c:\temp\serverlist.txt) do (
 )
 
 pause
+notepad c:\temp\Pingtest_%date:~-10,2%%date:~-7,2%%date:~-4,4%.txt
